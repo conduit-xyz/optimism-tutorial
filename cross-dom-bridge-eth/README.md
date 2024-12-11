@@ -65,7 +65,7 @@ require('dotenv').config()
 The libraries we need: [`ethers`](https://docs.ethers.io/v5/), [`dotenv`](https://www.npmjs.com/package/dotenv) and the Conduit and Optimism SDK themselves.
 
 ```js
-// Your settlment layer rpc url here
+// Your settlement layer rpc url here
 const l1Url = `https://l1-conduit-opstack-demo-nhl9xsg0wg.t.conduit.xyz`
 // Your conduit rpc url here
 const l2Url = `https://l2-conduit-opstack-demo-nhl9xsg0wg.t.conduit.xyz`
@@ -176,7 +176,7 @@ To show that the deposit actually happened we show before and after balances.
   const response = await crossChainMessenger.depositETH(gwei)  
 ```
 
-[`crossChainMessenger.depositETH()`](https://sdk.optimism.io/classes/crosschainmessenger#depositETH-2) creates and sends the deposit trasaction on L1.
+[`crossChainMessenger.depositETH()`](https://sdk.optimism.io/classes/crosschainmessenger#depositETH-2) creates and sends the deposit transaction on L1.
 
 ```js
   console.log(`Transaction hash (on L1): ${response.hash}`)
